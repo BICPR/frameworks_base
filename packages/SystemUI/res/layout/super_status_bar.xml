@@ -74,10 +74,11 @@
     <LinearLayout
         android:id="@+id/lock_icon_container"
         android:orientation="vertical"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/status_bar_height"
-        android:layout_gravity="top|center_horizontal">
+        android:layout_gravity="top|center_horizontal"
+        android:gravity="center_horizontal">
         <com.android.systemui.statusbar.phone.LockIcon
             android:id="@+id/lock_icon"
             android:layout_width="@dimen/keyguard_lock_width"
@@ -87,6 +88,16 @@
             android:contentDescription="@string/accessibility_unlock_button"
             android:src="@*android:drawable/ic_lock"
             android:scaleType="center" />
+        <TextView
+            android:id="@+id/lock_text"
+            android:layout_width="@dimen/keyguard_lock_text_width"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="16dp"
+            android:fontFamily="google-sans"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="@dimen/keyguard_lock_text_margin_top"
+            android:text="@string/lock_text_text"/>
         <com.android.keyguard.KeyguardMessageArea
             android:id="@+id/keyguard_message_area"
             style="@style/Keyguard.TextView"
