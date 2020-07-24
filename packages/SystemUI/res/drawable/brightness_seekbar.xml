@@ -28,13 +28,12 @@
     <clip android:clipOrientation="horizontal" android:gravity="left">
             <selector>
                 <item android:state_enabled="false"
-                    android:drawable="@android:color/transparent" />
+                      android:drawable="@android:color/transparent" />
                 <item>
-                    <shape android:shape="rectangle"
-                        android:tint="?android:attr/colorAccent">
+                    <shape android:shape="rectangle">
                         <corners android:radius="8dp"/>
                         <size android:height="42dp" />
-                        <solid android:color="?android:attr/colorAccent" />
+                        <solid android:color="@color/brightness_slider_seekbar" />
                     </shape>
                 </item>
             </selector>
