@@ -34,8 +34,7 @@
                         android:tint="?android:attr/colorAccent">
                         <corners android:radius="8dp"/>
                         <size android:height="42dp" />
-                        <solid android:color="?android:attr/colorAccent" 
-			android:alpha="0.3" />
+                        <solid android:color="?android:attr/colorAccent" />
                     </shape>
                 </item>
             </selector>
